@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 01</title>
+    <link rel="stylesheet" href="lib/normalize.css">
+    <link rel="stylesheet" href="lib/fontawesome-free-6.7.2-web/css/all.min.css/">
+
+
+    <style>
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;
+
+
+        }
+        section{
+            margin-top: 150px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        .nav{
+            width: 180px;
+            height: 60px;
+            background: blueviolet;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 30px;
+            padding-right: 20px;
+            border-radius: 10px;
+
+            margin-left: -180px;
+
+            transition: transform 3s ease, margin-left 1s ease;
+        }
+
+        .fas{
+            color: white;
+            font-size: 40px;
+        }
+
+        .nav:hover{
+            margin-left:-3px;
+        }
+
+    </style>
+</head>
+<script src="lib/fontawesome-free-6.7.2-web/js/all.min.js"></script>
+<body>
+
+<section>
+    <div class="nav">
+        <a href="#">User</a>
+        <i class="fas fa-user"></i>
+    </div>
+    <div class="nav">
+        <a href="#">Settings</a>
+        <i class="fas fa-cog"></i>
+    </div>
+    <div class="nav">
+        <a href="#">Logout</a>
+        <i class="fas fa-sign-out-alt"></i>
+    </div>
+    <div class="nav">
+        <a href="#">Cart</a>
+        <i class="fas fa-shopping-cart"></i>
+    </div>
+
+</section>
+
+</body>
+</html>
